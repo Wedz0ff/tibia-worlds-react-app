@@ -13,7 +13,7 @@ export default class Main extends Component {
   }
 
   loadWorlds = async () => {
-    const response = await api.get("/v2/worlds.json");
+    const response = await api.get("/v3/worlds");
     this.setState({ worlds: response.data.worlds.allworlds });
   };
 
